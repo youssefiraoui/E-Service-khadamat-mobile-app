@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iraoui.khadamatv2.Login"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/idpwd"
+            android:layout_below="@+id/idpwd"
+            android:layout_weight="1"
+            android:onClick="save"
+            android:text="save" />
+
+        <EditText
+            android:id="@+id/idnom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="61dp"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/idprenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idnom"
+            android:layout_below="@+id/idnom"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="Prenom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/idtel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idprenom"
+            android:layout_below="@+id/idprenom"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="06XXXXXXXX"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/idDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idtel"
+            android:layout_below="@+id/idtel"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Date de naissance"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="19dp"
+            android:contentDescription="votre sexe"
+            android:hint="votre sexe"
+            android:text="service" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idDate"
+            android:layout_below="@+id/idDate"
+            android:layout_marginTop="19dp"
+            android:contentDescription="choisir une région"
+            android:hint="choisir une service"
+            android:text="service" />
+
+        <EditText
+            android:id="@+id/idemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner1"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="votre mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/idpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/idemail"
+            android:layout_below="@+id/idemail"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="votre password"
+            android:inputType="textPassword" />
+<ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
